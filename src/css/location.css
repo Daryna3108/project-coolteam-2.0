@@ -1,0 +1,157 @@
+.loc-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.loc-title-box {
+    margin: 0;
+    padding: 0;
+}
+
+.loc-per-title {
+    font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #0b0803;
+}
+
+.loc-title {
+    padding-top: 16px;
+    font-weight: 400;
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+}
+
+.loc-text {
+    padding-top: 24px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.5;
+}
+.loc-contacts {
+    font-style: normal;
+}
+
+.loc-contacts-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.loc-item{
+    display: flex;
+    flex-direction: column;
+    width: 288px;
+}
+
+.loc-icon {
+    fill: #0b0803;
+}
+
+.loc-contacts-title{
+    padding-top: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+}
+
+.loc-link {
+    font-style: normal;
+    padding-top: 8px;
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #0b0803;
+        opacity: 1;
+        transition: opacity 250ms ease-in-out;
+}
+.loc-link:hover,
+.loc-link:focus {
+    opacity: 0.5;
+}
+.loc-link:active {
+    opacity: 0.7;
+}
+
+.loc-text.loc-address {
+    font-style: normal;
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+.loc-map-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-style: normal;
+    padding-top: 16px;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #0b0803;
+    opacity: 1;
+    transition: opacity 250ms ease-in-out;
+}
+.loc-map-link:hover,
+.loc-map-link:focus {
+    opacity: 0.5;
+}
+.loc-map-link:active {
+    opacity: 0.7;
+}
+
+
+
+.map-box {
+    margin-top:32px;
+    width: 100%;
+    height: 307px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.map{
+    width:100%;
+    height:100%;
+    border:0;
+    display:block;
+}
+@media screen and (min-width: 768px) {
+    .loc-contacts-list {
+        flex-direction: row;
+    }
+    .loc-item {
+        width: 208px;
+    }
+    .map-box {
+        height: 377px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .loc-title {
+        font-size: 48px;
+    }
+    .loc-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .loc-contacts-list {
+        flex-direction: column;
+    }
+
+    .loc-item {
+        width: 419px;
+    }
+
+    .map-box {
+        width: 869px;
+        height: 697px;
+    }
+}

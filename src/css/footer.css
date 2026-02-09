@@ -1,21 +1,153 @@
-.footer {
-  padding: 20px 0;
+/*#region Footer#*/
+
+.footer-container {
+  background-color: #b58869;
+  padding: 24px 16px;
 }
-.footer-desc {
-  text-align: center;
+
+.footer-content {
+  background-color: #c29d84;
+
+  border: 1px solid rgba(11, 8, 3, 0.15);
+  border-radius: 40px;
+  padding: 32px 46px;
+  min-width: 288px;
+  height: 500px;
+  width: 100%;
+  margin: 0 auto 32px;
 }
-.footer-link {
-  position: relative;
+
+.footer-logo-link {
+  width: 196px;
+  height: 84px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.footer-link::before {
-  content: '';
-  position: absolute;
-  bottom: 6%;
-  left: 50%;
-  transform: translateX(-50%) skewX(-12deg);
-  z-index: -1;
-  width: 110%;
-  height: 24%;
-  background-color: #41d1ff;
-  transition: 200ms ease;
+
+.footer-logo {
+  fill: #0b0803;
 }
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 40px;
+
+  margin-bottom: 32px;
+}
+
+.footer-social-item {
+}
+
+.footer-social-link {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-social-icon {
+  fill: #0b0803;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-nav-item {
+}
+
+.footer-item-link {
+  line-height: 1.5;
+  color: #0b0803;
+
+  cursor: pointer;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*#endregion Footer#*/
+
+/* #region Media Tablet*/
+@media screen and (min-width: 768px) {
+  .footer-container {
+    min-width: 768px;
+    width: 100%;
+    height: 257px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .footer-content {
+    width: 704px;
+    height: 156px;
+  }
+
+  .footer-logo-link {
+    width: 84px;
+  }
+
+  .footer-logo-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    gap: 40px;
+  }
+
+  .footer-social {
+    gap: 12px;
+  }
+
+  .footer-social-item {
+  }
+
+  .footer-social-link {
+    width: 32px;
+    height: 32px;
+  }
+  .footer-nav-list {
+    flex-direction: row;
+    margin-top: 32px;
+  }
+}
+/* #endregion Media Tablet*/
+
+/* #region Media Desktop*/
+@media screen and (min-width: 1440px) {
+  .footer-container {
+    min-width: 1440px;
+    height: 201px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 1312px;
+    height: 100px;
+  }
+
+  .footer-logo-social {
+    justify-content: flex-start;
+  }
+
+  .footer-nav-list {
+    margin-top: 0;
+  }
+}
+/* #endregion Media Desktop*/

@@ -1,0 +1,32 @@
+<div class="backdrop " data-model>
+  <div class="success-modal">
+    <button class="modal-x-btn" type="button" data-modal-close>
+      <svg class="modal-x-icon" width="32" height="32">
+        <use href="/images/icons.svg#icon-x"></use>
+      </svg>
+    </button>
+    <h2 class="modal-title">Welcome to the world of CoffeeJoy!</h2>
+    <p class="modal-text">
+      Fresh brews, special offers, and cozy updates are coming your way.
+    </p>
+    <picture class="modal-picture">
+      <source
+        media="(min-width: 1440px)"
+        srcset="/images/modal/modal.jpg 1x, /images/modal/modal@2x.jpg 2x"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /images/modal/modal-tab.jpg    1x,
+          /images/modal/modal-tab@2x.jpg 2x"
+      />
+      <img class="modal-img" src="/images/modal/modal-mob.jpg" 
+      srcset="/images/modal/modal-mob@2x.jpg 2x"
+      alt="Letter with a cup of coffee" 
+      loading="lazy" />
+    </picture>
+    <button class="modal-close-btn" type="button" data-modal-close>
+      Close
+    </button>
+  </div>
+</div>

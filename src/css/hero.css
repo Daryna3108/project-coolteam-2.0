@@ -1,0 +1,130 @@
+.hero {
+  display: flex;
+  position: relative;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+
+  text-align: left;
+  margin: 0 auto;
+
+  max-width: 1440px;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    image-set(
+      url('../images/hero/hero-mob-1x.jpg') 1x,
+      url('../images/hero/hero-mob-2x.jpg') 2x
+    );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 108px 0;
+  height: auto;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.hero-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+}
+.hero-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: white;
+  margin: 0;
+}
+.hero-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: white;
+  margin: 0;
+  letter-spacing: 0.04em;
+}
+.hero-btn {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 8px;
+  gap: 8px;
+  border-radius: 100px;
+  padding: 10px 24px;
+  min-width: 135px;
+  width: fit-content;
+  height: 44px;
+  box-shadow:
+    0 1px 2px 0 rgba(11, 8, 3, 0.05),
+    inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2),
+    inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+    inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+  background: #6f4e37;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #c29d84;
+}
+
+.hero-btn:active {
+  background: #60432f;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      image-set(
+        url('../images/hero/hero-tab-1x.jpg') 1x,
+        url('../images/hero/hero-tab-2x.jpg') 2x
+      );
+    padding: 311px 0;
+  }
+  .hero-container {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .hero-content {
+    max-width: 560px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding: 259px 0;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      image-set(
+        url('../images/hero/hero-desk-1x.jpg') 1x,
+        url('../images/hero/hero-desk-2x.jpg') 2x
+      );
+  }
+
+  .hero-title {
+    font-size: 56px;
+  }
+}

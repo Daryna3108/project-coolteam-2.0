@@ -1,0 +1,233 @@
+/* =========================
+   WELCOME — Mobile first
+========================= */
+
+.welcome {
+    background-color: #e0cbb4;
+    padding: 64px 0;
+}
+
+.welcome__container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.welcome__top {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome__left {
+    margin-bottom: 32px;
+}
+
+.welcome__label {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0b0803;
+    margin: 0 0 16px;
+}
+
+.welcome__title {
+    font-family: "Aboreto", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #0b0803;
+    margin: 0;
+}
+
+.welcome__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome__text {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0b0803;
+    margin: 0 0 32px;
+}
+
+
+.welcome__btn {
+    width: 100%;
+    height: 44px;
+    padding: 10px 24px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    margin: 0 0 32px;
+
+    border-radius: 100px;
+    background: #6f4e37;
+
+
+    box-shadow: 0 1px 2px rgba(11, 8, 3, 0.08);
+
+    text-decoration: none;
+
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+
+    transition: transform 200ms ease, box-shadow 200ms ease, opacity 200ms ease;
+}
+
+
+.welcome__btn:active {
+    background: #6f4e37;
+    opacity: 0.5;
+
+    box-shadow:
+        0 1px 2px 0 rgba(11, 8, 3, 0.05),
+        inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2),
+        inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+        inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+        inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+
+    transform: translateY(0);
+}
+
+.welcome__btn-svg {
+    fill: currentColor;
+    width: 18px;
+    height: 18px;
+    display: block;
+    flex-shrink: 0;
+}
+
+/* ---------- Image ---------- */
+.welcome__media {
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.welcome__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* =========================
+   375px+
+========================= */
+@media screen and (min-width: 375px) {
+    .welcome {
+        padding: 56px 0;
+    }
+
+    .welcome__container {
+        padding: 0 20px;
+    }
+
+    .welcome__title {
+        font-size: 36px;
+    }
+
+    .welcome__text {
+        font-size: 18px;
+    }
+}
+
+/* =========================
+   768px+ (Tablet)
+========================= */
+@media screen and (min-width: 768px) {
+    .welcome {
+        padding: 64px 0;
+    }
+
+    .welcome__container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
+    .welcome__top {
+        flex-direction: row;
+        gap: 32px;
+        align-items: flex-start;
+    }
+
+    .welcome__left,
+    .welcome__right {
+        flex: 1;
+    }
+
+    .welcome__left {
+        margin-bottom: 0;
+    }
+
+    .welcome__right {
+        align-items: flex-start;
+    }
+
+    .welcome__text {
+        margin-bottom: 32px;
+    }
+
+    .welcome__btn {
+        width: 181px;
+        height: 44px;
+        margin-bottom: 32px;
+    }
+}
+
+/* =========================
+   1440px+ (Desktop)
+========================= */
+@media screen and (min-width: 1440px) {
+    .welcome {
+        padding: 64px 0;
+    }
+
+    .welcome__container {
+        max-width: 1440px;
+        padding: 0 64px;
+    }
+
+    .welcome__top {
+        gap: 32px;
+        align-items: flex-start;
+        margin-bottom: 80px;
+    }
+
+    .welcome__btn {
+        width: 181px;
+        height: 44px;
+        margin-bottom: 0;
+    }
+
+
+    .welcome__btn:hover {
+        transform: translateY(-1px);
+        box-shadow:
+            0 1px 2px 0 rgba(11, 8, 3, 0.05),
+            inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2),
+            inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+            inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+            inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+    }
+
+
+    
+
+    .welcome__btn:focus-visible {
+        outline: none;
+        box-shadow:
+            0 0 0 3px rgba(111, 78, 55, 0.35),
+            0 1px 2px rgba(11, 8, 3, 0.08);
+    }
+}

@@ -30,10 +30,6 @@
 }
 
 .welcome__title {
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
     text-transform: uppercase;
     color: #0b0803;
 }
@@ -137,13 +133,9 @@
    768px+ (Tablet)
 ========================= */
 @media screen and (min-width: 768px) {
-    .welcome {
-        padding: 64px 0;
-    }
 
     .welcome__container {
         max-width: 768px;
-        padding: 0 32px;
     }
 
     .welcome__top {
@@ -180,13 +172,13 @@
    1440px+ (Desktop)
 ========================= */
 @media screen and (min-width: 1440px) {
-    .welcome {
-        padding: 64px 0;
-    }
 
     .welcome__container {
         max-width: 1440px;
-        padding: 0 64px;
+    }
+
+    .welcome__title {
+        font-size: 48px;
     }
 
     .welcome__top {

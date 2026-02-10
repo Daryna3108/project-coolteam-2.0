@@ -10,16 +10,16 @@
   border: 1px solid rgba(11, 8, 3, 0.15);
   border-radius: 40px;
   padding: 32px 48px;
-  min-width: 288px;
+  max-width: 288px;
   height: 500px;
-  width: 100%;
   margin: 0 auto 32px;
 }
 
 .footer-logo-social {
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer-logo-link {
@@ -28,6 +28,8 @@ flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  margin: 0;
 }
 
 .footer-logo {
@@ -43,7 +45,8 @@ flex-wrap: wrap;
   margin-bottom: 32px;
 }
 
-.footer-social-item {}
+.footer-social-item {
+}
 
 .footer-social-link {
   width: 32px;
@@ -62,7 +65,8 @@ flex-wrap: wrap;
   align-items: center;
 }
 
-.footer-nav-item {}
+.footer-nav-item {
+}
 
 .footer-item-link {
   line-height: 1.5;
@@ -91,35 +95,48 @@ flex-wrap: wrap;
   }
 
   .footer-content {
-    width: 704px;
+    max-width: 704px;
     height: 156px;
   }
 
   .footer-logo-link {
     width: 84px;
-    align-items: flex-start;
+    height: 36px;
   }
   .footer-logo {
-height: 36px;
-}
-  .footer-logo-social {
-    display: flex;
-    justify-content: center;
+    width: 63px;
     height: 36px;
+  }
+
+  .footer-logo-social {
     gap: 40px;
+
+    flex-direction: row;
   }
 
   .footer-social {
-    height: 24px;
     gap: 12px;
     margin: 0;
   }
 
-  .footer-social-item {}
-
   .footer-social-link {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .icon-f {
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon-i {
+    width: 18px;
+    height: 18px;
+  }
+
+  .icon-x {
+    width: 18px;
+    height: 16px;
   }
 
   .footer-nav-list {
@@ -133,7 +150,7 @@ height: 36px;
 /* #region Media Desktop*/
 @media screen and (min-width: 1440px) {
   .footer-container {
-    max-width: 1440px;
+    min-width: 1440px;
     height: 201px;
     padding-left: 64px;
     padding-right: 64px;
@@ -142,7 +159,7 @@ height: 36px;
   .footer-content {
     display: flex;
     justify-content: space-between;
-    width: 1312px;
+    max-width: 1312px;
     height: 100px;
   }
 

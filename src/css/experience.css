@@ -1,144 +1,105 @@
-/*EXPERIENCE*/
+/* ========== EXPERIENCE (mobile-first) ========== */
 
 .title-container {
-    padding-top: 64px;
     display: flex;
-    gap: 20px;
     flex-direction: column;
+    gap: 20px;
     align-items: center;
-    margin-bottom: 64px;
+    padding-top: 40px;
+    margin-bottom: 40px;
 }
 
 .experience-title {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.2;
     text-align: center;
 }
 
 .experience-text {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     text-align: center;
 }
 
-/* ДЕСКТОП - 3 колонки */
+/* GRID: MOBILE */
 .experience-grid-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 100px;
-    gap: 24px;
+    /* <-- ВАЖЛИВО */
+    grid-template-columns: 1fr;
+    grid-auto-rows: 80px;
+    /* висота "рядка" */
+    gap: 16px;
 }
 
 .experience-img {
-    overflow: hidden;
     border-radius: 20px;
+    overflow: hidden;
+}
+
+/* щоб picture/img займали всю плитку */
+.experience-img picture,
+.experience-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .experience-img img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
-    display: block;
 }
 
-/* Левая колонка */
+/* MOBILE: висоти через span (під твою мобільну картинку) */
 .experience-img:nth-child(1) {
     grid-row: span 3;
-    /* Капучино - большой квадрат */
+}
+
+.experience-img:nth-child(2) {
+    grid-row: span 3;
+}
+
+.experience-img:nth-child(3) {
+    grid-row: span 2;
 }
 
 .experience-img:nth-child(4) {
     grid-row: span 2;
-    /* Кафе COFFEEJOY - прямоугольник */
-}
-
-.experience-img:nth-child(7) {
-    grid-row: span 3;
-    /* Стакан с кофе - прямоугольник */
-}
-
-/* Центральная колонка */
-.experience-img:nth-child(2) {
-    grid-row: span 2;
-    /* Круассан - прямоугольник */
 }
 
 .experience-img:nth-child(5) {
     grid-row: span 3;
-    /* Приготовление кофе - большой вертикальный */
-}
-
-/* Правая колонка */
-.experience-img:nth-child(3) {
-    grid-row: span 3;
-    /* Книга - большой квадрат */
 }
 
 .experience-img:nth-child(6) {
-    grid-row: span 3;
-    /* Две чашки на улице - большой квадрат */
+    grid-row: span 2;
 }
 
-/* МОБИЛКА - 2 колонки */
-@media (max-width: 767px) {
+.experience-img:nth-child(7) {
+    grid-row: span 3;
+}
+
+
+/* ========== TABLET (>=768px) ========== */
+@media screen and (min-width: 768px) {
     .title-container {
-        padding-top: 40px;
-        margin-bottom: 40px;
+        padding-top: 64px;
+        margin-bottom: 64px;
     }
 
     .experience-title {
-        font-size: 28px;
+        font-size: 36px;
     }
 
     .experience-text {
-        font-size: 16px;
+        font-size: 18px;
     }
 
-    .experience-grid-list {
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: 80px;
-        gap: 16px;
-    }
-
-    /* Левая колонка */
-    .experience-img:nth-child(1) {
-        grid-row: span 3;
-    }
-
-    .experience-img:nth-child(3) {
-        grid-row: span 2;
-    }
-
-    .experience-img:nth-child(5) {
-        grid-row: span 3;
-    }
-
-    .experience-img:nth-child(7) {
-        grid-row: span 3;
-    }
-
-    /* Правая колонка */
-    .experience-img:nth-child(2) {
-        grid-row: span 3;
-    }
-
-    .experience-img:nth-child(4) {
-        grid-row: span 2;
-    }
-
-    .experience-img:nth-child(6) {
-        grid-row: span 3;
-    }
-}
-
-/* ПЛАНШЕТ - 2 колонки */
-@media (min-width: 768px) and (max-width: 1200px) {
     .experience-grid-list {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 100px;
         gap: 20px;
     }
 
+    /* Планшетний “як на макеті”: дві колонки + одна широка внизу */
     .experience-img:nth-child(1) {
         grid-row: span 3;
     }
@@ -156,6 +117,45 @@
     }
 
     .experience-img:nth-child(5) {
+        grid-column: span 2;
+        grid-row: span 3;
+    }
+
+    .experience-img:nth-child(6) {
+        grid-row: span 2;
+    }
+
+    .experience-img:nth-child(7) {
+        grid-row: span 2;
+    }
+}
+
+
+/* ========== DESKTOP (>=1440px) ========== */
+@media screen and (min-width: 1440px) {
+    .experience-grid-list {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 100px;
+        gap: 24px;
+    }
+
+    .experience-img:nth-child(1) {
+        grid-row: span 3;
+    }
+
+    .experience-img:nth-child(2) {
+        grid-row: span 2;
+    }
+
+    .experience-img:nth-child(3) {
+        grid-row: span 3;
+    }
+
+    .experience-img:nth-child(4) {
+        grid-row: span 2;
+    }
+
+    .experience-img:nth-child(5) {
         grid-row: span 3;
     }
 
@@ -164,7 +164,6 @@
     }
 
     .experience-img:nth-child(7) {
-        grid-column: span 2;
         grid-row: span 3;
     }
 }

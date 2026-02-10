@@ -178,10 +178,6 @@ img {
 
 /* Десктоп або комп'ютер */
 @media (min-width: 1440px) {
-    .child {
-        display: flex;
-        flex-wrap: wrap;
-    }
 
     .quality-section {
         padding: 64px 0;

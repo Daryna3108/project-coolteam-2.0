@@ -122,11 +122,14 @@
    375px+
 ========================= */
 @media screen and (min-width: 375px) {
+
+
     .welcome {
         padding: 56px 0;
     }
 
     .welcome__container {
+        max-width: 375px;
         padding: 0 20px;
     }
 

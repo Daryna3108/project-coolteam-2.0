@@ -49,7 +49,9 @@
 
 .experience-img {
   display: block;
-  width: 288px;
+  width: 100%;
+  max-width: 375px;
+  min-width: 288px;
   height: 100%;
   border-radius: 32px;
   overflow: hidden;
@@ -74,6 +76,12 @@
 }
 .div7 {
   height: 391px;
+}
+
+@media screen and (min-width: 375px) {
+  .experience-img {
+    max-width: 375px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -112,15 +120,12 @@
   .div7 {
     grid-column: 1 / -1;
     width: 704px;
+    max-width: 704px;
     height: 391px;
     justify-self: center;
   }
 }
 @media screen and (min-width: 1440px) {
-  .img-container {
-    margin-top: 0;
-  }
-
   .experience-title {
     font-size: 48px;
   }
@@ -148,6 +153,7 @@
 
   .experience-grid-list-desk .experience-img {
     width: 416px;
+    max-width: 416px;
   }
 
   .experience-grid-list-desk .div1,

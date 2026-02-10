@@ -5,6 +5,10 @@
   margin: 0 auto;
 }
 
+.container.container-column {
+  flex-direction: column;
+}
+
 @media screen and (min-width: 375px) {
   .container {
     max-width: 375px;
@@ -19,7 +23,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1440px;
     padding-left: 64px;

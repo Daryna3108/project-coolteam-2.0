@@ -156,13 +156,13 @@ input:not(:placeholder-shown):invalid+.error-message {
 
 /* #region Media Desktop*/
 @media screen and (min-width: 1440px) {
-  .container {
+  .subscribe-container {
     max-width: 1440px;
     display: flex;
     gap: 32px;
   }
 
-  .section-title {
+  .subscribe-title {
     font-size: 48px
   }
 

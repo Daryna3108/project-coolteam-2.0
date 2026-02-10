@@ -1,12 +1,10 @@
-.quality-section{
+/* .quality-section {
     padding: 64px 0;
-}
+} */
 
-.quality-section-title{
-    font-family: 'Aboreto', sans-serif;
-}
+.quality-section-title {}
 
-.quality-section-name{
+.quality-section-name {
     display: block;
     line-height: 1.5;
     font-weight: 600;
@@ -15,16 +13,12 @@
     margin: 0 auto 16px;
 }
 
-.quality-section-title{
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
+.quality-section-title {
     text-align: center;
     margin: 0 auto 24px;
 }
 
-.quality-descr{
+.quality-descr {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
@@ -32,38 +26,40 @@
     margin: 0 auto 32px;
 }
 
-.quality-list{
+.quality-list {
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
 }
 
-.quality-card{
+.quality-card {
     flex-direction: column;
     display: flex;
 }
 
-.quality-medias{
+.quality-medias {
     line-height: 0;
     margin-bottom: 32px;
 }
 
-img{
+img {
     width: 100%;
     object-fit: cover;
     border-radius: 32px;
 }
 
-.quality-item-title{
+.quality-item-title {
     margin-top: 8px;
     margin-bottom: 8px;
+    font-family: "Quicksand", sans-serif;
     font-weight: 600;
     font-size: 20px;
-    line-height: 1.4;
+    line-height: 1.5;
+    color: #0b0803;
     text-align: center;
 }
 
-.quality-item-descr{
+.quality-item-descr {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -73,12 +69,14 @@ img{
 
 /* резінка */
 @media (max-width: 374px) {
+
     .quality-intro,
-    .quality-cards{
+    .quality-cards {
         width: 100%;
     }
 
-    .quality-section, .quality-list{
+    .quality-section,
+    .quality-list {
         gap: 24px;
     }
 
@@ -86,26 +84,20 @@ img{
         margin-top: 24px;
     } */
 
-    img{
+    img {
         aspect-ratio: 288 / 164;
     }
 }
 
 /* Мобілка */
-@media (min-width: 375px) and (max-width: 767px){
-    .quality-section .quality-section-title{
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 1.2;
-        letter-spacing: -0.01em;
-    }
+@media (min-width: 375px) and (max-width: 767px) {
 
-    .quality-descr{
+    .quality-descr {
         line-height: 1.5;
         font-size: 18px;
     }
 
-    .quality-section .quality-list{
+    .quality-section .quality-list {
         gap: 24px;
     }
 
@@ -113,48 +105,42 @@ img{
         margin-top: 24px;
     } */
 
-    img{
+    img {
         aspect-ratio: 288 / 164;
     }
 }
-/* Планшетікс */
-@media (min-width: 768px) and (max-width: 1439px){
-    .quality-section{
-        padding: 64px 0;
-    }
 
-    .quality-section-title{
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 1.2;
-        letter-spacing: -0.01em;
+/* Планшетікс */
+@media (min-width: 768px) and (max-width: 1439px) {
+
+    .quality-section-title {
         width: 452px;
         margin: 0 auto 24px;
     }
 
-    .quality-section .quality-descr{
+    .quality-section .quality-descr {
         line-height: 1.5;
         font-size: 18px;
         max-width: 704px;
         margin: 0 auto 32px;
     }
 
-    .quality-section .quality-list{
+    .quality-section .quality-list {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 32px;
     }
 
-    .quality-item:nth-child(3){
+    .quality-item:nth-child(3) {
         grid-column: 1 / -1;
     }
 
-    .quality-section .quality-item-title{
+    .quality-section .quality-item-title {
         margin-top: 0;
         margin-bottom: 8px;
     }
 
     .quality-item:nth-child(1) .quality-item-title,
-    .quality-item:nth-child(2) .quality-item-title{
+    .quality-item:nth-child(2) .quality-item-title {
         padding-inline: 28px;
     }
 
@@ -163,47 +149,45 @@ img{
         padding-inline: 23px;
     }
 
-    .quality-item:nth-child(3) .quality-item-descr{
+    .quality-item:nth-child(3) .quality-item-descr {
         width: 440px;
         margin: 0 auto;
     }
 
-    img{
+    img {
         aspect-ratio: 352 / 237;
     }
 }
-/* Десктоп або комп'ютер */
-@media (min-width: 1440px){
-    .quality-section{
-        padding: 64px 0;
-    }
 
-    .quality-cards{
+/* Десктоп або комп'ютер */
+@media (min-width: 1440px) {
+
+    .quality-cards {
         max-width: 1312px;
         margin-inline: auto;
     }
 
-    .quality-section .quality-list{
+    .quality-section .quality-list {
         display: flex;
         gap: 24px;
         flex-wrap: nowrap;
         align-items: flex-start;
     }
 
-    .quality-list .quality-item{
+    .quality-list .quality-item {
         flex: 0 0 calc((100% - 48px) / 3);
         min-width: 0;
     }
 
-    .quality-list .quality-item:first-child{
+    .quality-list .quality-item:first-child {
         min-width: 0;
     }
 
-    .quality-list .quality-item + .quality-item{
+    .quality-list .quality-item+.quality-item {
         margin-top: 0;
     }
 
-    .quality-medias img{
+    .quality-medias img {
         width: 100%;
         height: 240px;
         object-fit: cover;
@@ -211,7 +195,7 @@ img{
         border-radius: 32px;
     }
 
-    .quality-item-title{
+    .quality-item-title {
         margin-top: 0;
         margin-bottom: 8px;
         font-weight: 600;
@@ -221,7 +205,7 @@ img{
         text-align: center;
     }
 
-    .quality-item-descr{
+    .quality-item-descr {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
@@ -229,17 +213,19 @@ img{
         color: #0b0803;
     }
 
-    .quality-section-title{
-        font-weight: 400;
+    .quality-section-title {
         font-size: 48px;
-        line-height: 1.16;
-        letter-spacing: -0.01em;
         width: 768px;
         text-align: center;
         margin: 0 auto 18px;
     }
 
-    .quality-section-descr{
+    .quality-descr {
+        width: 768px;
+        text-align: center;
+    }
+
+    .quality-section-descr {
         line-height: 1.5;
         font-size: 18px;
         max-width: 768px;

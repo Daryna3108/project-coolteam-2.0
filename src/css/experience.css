@@ -1,13 +1,16 @@
 
 /*EXPERIENCE*/
 
-.title-container {
-  padding-top: 64px;
+.container.experience-container {
   display: flex;
-  gap: 20px;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 64px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .experience-title {
@@ -29,7 +32,6 @@
   grid-auto-rows: 100px;
   gap: 24px;
 }
-
 .experience-img {
   overflow: hidden;
   border-radius: 20px;
@@ -72,6 +74,10 @@
 .experience-img:nth-child(6) {
   grid-row: span 3; /* Две чашки на улице - большой квадрат */
 }
+@media screen and (min-width: 1440px) {
+  .experience-title {
+    font-size: 48px;
+  }
 
 /* МОБИЛКА - 2 колонки */
 @media (max-width: 767px) {

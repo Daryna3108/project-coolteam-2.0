@@ -9,14 +9,16 @@
       <div class="blok-form">
         <form class="form-subscribe">
           <label class="label-subscribe" for="input-subscribe">
+            <span class="visually-hidden">Email</span>
             <input
               class="input-subscribe"
               type="email"
               id="input-subscribe"
               name="input-subscribe"
               placeholder="Your Email Here"
+              required
             />
-            <span class="error-message">Error Text</span>
+            <span class="error-message">Please enter a valid email</span>
           </label>
           <button class="submit" type="submit">
             Subscribe

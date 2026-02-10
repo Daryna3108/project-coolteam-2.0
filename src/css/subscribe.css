@@ -107,8 +107,12 @@
   transition: opacity 0.2s ease;
 }
 
-input:not(:placeholder-shown):invalid+.error-message {
-  display: block;
+.label-subscribe .error-message {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.label-subscribe .input-subscribe:not(:placeholder-shown):invalid~.error-message {
   opacity: 1;
   visibility: visible;
 }

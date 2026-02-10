@@ -1,168 +1,165 @@
-/* ========== EXPERIENCE (mobile-first) ========== */
+/*EXPERIENCE*/
+
+.container.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .title-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .experience-title {
-    font-size: 28px;
-    line-height: 1.2;
-    text-align: center;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: normal;
+  text-align: center;
+  max-width: 288px;
+  margin-bottom: 24px;
 }
 
 .experience-text {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 288px;
 }
 
-/* GRID: MOBILE */
+.img-container {
+  margin-top: 32px;
+  width: 100%;
+}
+
+.experience-grid-list-desk {
+  display: none;
+}
+
 .experience-grid-list {
-    display: grid;
-    /* <-- ВАЖЛИВО */
-    grid-template-columns: 1fr;
-    grid-auto-rows: 80px;
-    /* висота "рядка" */
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .experience-img {
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-/* щоб picture/img займали всю плитку */
-.experience-img picture,
-.experience-img img {
-    display: block;
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 288px;
+  height: 100%;
+  border-radius: 32px;
+  overflow: hidden;
 }
 
 .experience-img img {
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* MOBILE: висоти через span (під твою мобільну картинку) */
-.experience-img:nth-child(1) {
-    grid-row: span 3;
+.div1,
+.div2,
+.div5,
+.div6 {
+  height: 288px;
+}
+.div3,
+.div4 {
+  height: 162px;
+}
+.div7 {
+  height: 391px;
 }
 
-.experience-img:nth-child(2) {
-    grid-row: span 3;
-}
-
-.experience-img:nth-child(3) {
-    grid-row: span 2;
-}
-
-.experience-img:nth-child(4) {
-    grid-row: span 2;
-}
-
-.experience-img:nth-child(5) {
-    grid-row: span 3;
-}
-
-.experience-img:nth-child(6) {
-    grid-row: span 2;
-}
-
-.experience-img:nth-child(7) {
-    grid-row: span 3;
-}
-
-
-/* ========== TABLET (>=768px) ========== */
 @media screen and (min-width: 768px) {
-    .title-container {
-        padding-top: 64px;
-        margin-bottom: 64px;
-    }
+  .experience-title {
+    width: 100%;
+    max-width: 768px;
+  }
 
-    .experience-title {
-        font-size: 36px;
-    }
+  .experience-text {
+    width: 100%;
+    max-width: 768px;
+  }
 
-    .experience-text {
-        font-size: 18px;
-    }
+  .experience-grid-list {
+    display: grid;
+    grid-template-columns: repeat(2, 336px);
+    gap: 32px;
+    justify-content: center;
+    margin: 0 auto;
+  }
 
-    .experience-grid-list {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 100px;
-        gap: 20px;
-    }
+  .experience-img {
+    width: 336px;
+  }
+  .div1,
+  .div2,
+  .div5,
+  .div6 {
+    height: 336px;
+  }
+  .div3,
+  .div4 {
+    height: 189px;
+  }
 
-    /* Планшетний “як на макеті”: дві колонки + одна широка внизу */
-    .experience-img:nth-child(1) {
-        grid-row: span 3;
-    }
-
-    .experience-img:nth-child(2) {
-        grid-row: span 3;
-    }
-
-    .experience-img:nth-child(3) {
-        grid-row: span 2;
-    }
-
-    .experience-img:nth-child(4) {
-        grid-row: span 2;
-    }
-
-    .experience-img:nth-child(5) {
-        grid-column: span 2;
-        grid-row: span 3;
-    }
-
-    .experience-img:nth-child(6) {
-        grid-row: span 2;
-    }
-
-    .experience-img:nth-child(7) {
-        grid-row: span 2;
-    }
+  .div7 {
+    grid-column: 1 / -1;
+    width: 704px;
+    height: 391px;
+    justify-self: center;
+  }
 }
-
-
-/* ========== DESKTOP (>=1440px) ========== */
 @media screen and (min-width: 1440px) {
-    .experience-grid-list {
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 100px;
-        gap: 24px;
-    }
+  .img-container {
+    margin-top: 0;
+  }
 
-    .experience-img:nth-child(1) {
-        grid-row: span 3;
-    }
+  .experience-title {
+    font-size: 48px;
+  }
+  .experience-grid-list-mt {
+    display: none;
+  }
+  .experience-grid-list-desk {
+    display: grid;
+  }
 
-    .experience-img:nth-child(2) {
-        grid-row: span 2;
-    }
+  .coffe-lists-desk {
+    width: 1312px;
+    display: grid;
+    grid-template-columns: repeat(3, 416px);
+    gap: 32px;
+    margin: 0 auto;
+    align-items: start;
+  }
 
-    .experience-img:nth-child(3) {
-        grid-row: span 3;
-    }
+  .coffe-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
 
-    .experience-img:nth-child(4) {
-        grid-row: span 2;
-    }
+  .experience-grid-list-desk .experience-img {
+    width: 416px;
+  }
 
-    .experience-img:nth-child(5) {
-        grid-row: span 3;
-    }
+  .experience-grid-list-desk .div1,
+  .experience-grid-list-desk .div2,
+  .experience-grid-list-desk .div5,
+  .experience-grid-list-desk .div6,
+  .experience-grid-list-desk .div7 {
+    height: 416px;
+  }
 
-    .experience-img:nth-child(6) {
-        grid-row: span 3;
-    }
-
-    .experience-img:nth-child(7) {
-        grid-row: span 3;
-    }
+  .experience-grid-list-desk .div3,
+  .experience-grid-list-desk .div4 {
+    height: 234px;
+  }
 }

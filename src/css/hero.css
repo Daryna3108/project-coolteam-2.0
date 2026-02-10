@@ -10,12 +10,10 @@
   margin: 0 auto;
 
   max-width: 1440px;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    image-set(
-      url('../images/hero/hero-mob-1x.jpg') 1x,
-      url('../images/hero/hero-mob-2x.jpg') 2x
-    );
+
+  background-image: url("../images/hero/hero-mob-1x.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), image-set(url("../images/hero/hero-mob-1x.jpg") 1x,
+      url("../images/hero/hero-mob-2x.jpg") 2x);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -30,6 +28,7 @@
   position: relative;
   width: 100%;
 }
+
 .hero-content {
   display: flex;
   align-items: flex-start;
@@ -37,6 +36,7 @@
   flex-direction: column;
   gap: 24px;
 }
+
 .hero-title {
   text-transform: uppercase;
   font-weight: 400;
@@ -46,6 +46,7 @@
   color: white;
   margin: 0;
 }
+
 .hero-text {
   font-weight: 400;
   font-size: 18px;
@@ -54,6 +55,7 @@
   margin: 0;
   letter-spacing: 0.04em;
 }
+
 .hero-btn {
   box-sizing: border-box;
   display: flex;
@@ -97,31 +99,28 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image:
-      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      image-set(
-        url('../images/hero/hero-tab-1x.jpg') 1x,
-        url('../images/hero/hero-tab-2x.jpg') 2x
-      );
+    background-image: url("../images/hero/hero-tab-1x.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), image-set(url("../images/hero/hero-tab-1x.jpg") 1x,
+        url("../images/hero/hero-tab-2x.jpg") 2x);
     padding: 311px 0;
   }
+
   .hero-container {
     align-items: flex-start;
     text-align: left;
   }
+
   .hero-content {
     max-width: 560px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .hero {
     padding: 259px 0;
-    background-image:
-      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      image-set(
-        url('../images/hero/hero-desk-1x.jpg') 1x,
-        url('../images/hero/hero-desk-2x.jpg') 2x
-      );
+    background-image: url("../images/hero/hero-desk-1x.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), image-set(url("../images/hero/hero-desk-1x.jpg") 1x,
+        url("../images/hero/hero-desk-2x.jpg") 2x);
   }
 
   .hero-title {

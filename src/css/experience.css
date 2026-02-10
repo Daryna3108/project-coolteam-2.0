@@ -1,4 +1,3 @@
-
 /*EXPERIENCE*/
 
 .container.experience-container {
@@ -16,134 +15,148 @@
 .experience-title {
   font-size: 36px;
   line-height: 1.2;
+  font-weight: normal;
   text-align: center;
+  max-width: 288px;
+  margin-bottom: 24px;
 }
 
 .experience-text {
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
+  max-width: 288px;
 }
 
-/* ДЕСКТОП - 3 колонки */
-.experience-grid-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 100px;
+.img-container {
+  margin-top: 32px;
+  width: 100%;
+}
+.coffe-lists-box {
+  display: flex;
+  flex-direction: column;
   gap: 24px;
+  max-width: 375px;
+  margin: 0 auto;
+}
+.coffe-list {
+  display: contents;
 }
 .experience-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
   overflow: hidden;
-  border-radius: 20px;
 }
 
 .experience-img img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
-/* Левая колонка */
-.experience-img:nth-child(1) {
-  grid-row: span 3; /* Капучино - большой квадрат */
+.div1,
+.div2,
+.div5,
+.div6 {
+  height: 288px;
+}
+.div3,
+.div4 {
+  height: 162px;
+}
+.div7 {
+  height: 391px;
 }
 
-.experience-img:nth-child(4) {
-  grid-row: span 2; /* Кафе COFFEEJOY - прямоугольник */
+@media screen and (min-width: 375px) {
+  .experience-img {
+    max-width: 375px;
+  }
 }
 
-.experience-img:nth-child(7) {
-  grid-row: span 3; /* Стакан с кофе - прямоугольник */
-}
+@media screen and (min-width: 768px) {
+  .experience-title {
+    width: 100%;
+    max-width: 768px;
+  }
 
-/* Центральная колонка */
-.experience-img:nth-child(2) {
-  grid-row: span 2; /* Круассан - прямоугольник */
-}
+  .experience-text {
+    width: 100%;
+    max-width: 768px;
+  }
 
-.experience-img:nth-child(5) {
-  grid-row: span 3; /* Приготовление кофе - большой вертикальный */
-}
+  .coffe-lists-box {
+    display: grid;
+    grid-template-columns: repeat(2, 336px);
+    gap: 32px;
+    justify-content: center;
+    align-items: start;
+  }
 
-/* Правая колонка */
-.experience-img:nth-child(3) {
-  grid-row: span 3; /* Книга - большой квадрат */
-}
+  .coffe-list {
+    display: contents;
+  }
 
-.experience-img:nth-child(6) {
-  grid-row: span 3; /* Две чашки на улице - большой квадрат */
+  .experience-img {
+    width: 336px;
+  }
+  .div1,
+  .div2,
+  .div5,
+  .div6 {
+    height: 336px;
+  }
+  .div3,
+  .div4 {
+    height: 189px;
+  }
+
+  .div7 {
+    grid-column: 1 / -1;
+    width: 704px;
+    max-width: 704px;
+    height: 391px;
+    justify-self: center;
+  }
 }
 @media screen and (min-width: 1440px) {
   .experience-title {
     font-size: 48px;
   } }
 
-/* МОБИЛКА - 2 колонки */
-@media (max-width: 767px) {
-  .title-container {
-    padding-top: 40px;
-    margin-bottom: 40px;
+  .coffe-lists-box {
+    width: 1312px;
+    display: grid;
+    grid-template-columns: repeat(3, 416px);
+    gap: 32px;
+    margin: 0 auto;
+    align-items: start;
   }
 
-  .experience-title {
-    font-size: 28px;
+  .coffe-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
   }
 
-  .experience-text {
-    font-size: 16px;
+  .coffe-lists-box .experience-img {
+    width: 416px;
+    max-width: 416px;
   }
 
-  .experience-grid-list {
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 80px;
-    gap: 16px;
+  .coffe-lists-box .div1,
+  .coffe-lists-box .div2,
+  .coffe-lists-box .div5,
+  .coffe-lists-box .div6,
+  .coffe-lists-box .div7 {
+    height: 416px;
   }
 
-  /* Левая колонка */
-  .experience-img:nth-child(1) {
-    grid-row: span 3;
+  .coffe-lists-box .div3,
+  .coffe-lists-box .div4 {
+    height: 234px;
   }
-
-  .experience-img:nth-child(3) {
-    grid-row: span 2;
-  }
-
-  .experience-img:nth-child(5) {
-    grid-row: span 3;
-  }
-
-  .experience-img:nth-child(7) {
-    grid-row: span 3;
-  }
-
-  /* Правая колонка */
-  .experience-img:nth-child(2) {
-    grid-row: span 3;
-  }
-
-  .experience-img:nth-child(4) {
-    grid-row: span 2;
-  }
-
-  .experience-img:nth-child(6) {
-    grid-row: span 3;
-  }
-}
-
-/* ПЛАНШЕТ - 2 колонки */
-@media (min-width: 768px) and (max-width: 1200px) {
-  .experience-grid-list {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 100px;
-    gap: 20px;
-  }
-
-  .experience-img:nth-child(1) { grid-row: span 3; }
-  .experience-img:nth-child(2) { grid-row: span 3; }
-  .experience-img:nth-child(3) { grid-row: span 2; }
-  .experience-img:nth-child(4) { grid-row: span 2; }
-  .experience-img:nth-child(5) { grid-row: span 3; }
-  .experience-img:nth-child(6) { grid-row: span 3; }
-  .experience-img:nth-child(7) { grid-column: span 2; grid-row: span 3; }
 }

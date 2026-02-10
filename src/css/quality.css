@@ -1,6 +1,6 @@
-.quality-section {
+/* .quality-section {
     padding: 64px 0;
-}
+} */
 
 .quality-section-title {}
 
@@ -14,10 +14,6 @@
 }
 
 .quality-section-title {
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
     text-align: center;
     margin: 0 auto 24px;
 }
@@ -95,12 +91,6 @@ img {
 
 /* Мобілка */
 @media (min-width: 375px) and (max-width: 767px) {
-    .quality-section .quality-section-title {
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 1.2;
-        letter-spacing: -0.01em;
-    }
 
     .quality-descr {
         line-height: 1.5;
@@ -122,15 +112,8 @@ img {
 
 /* Планшетікс */
 @media (min-width: 768px) and (max-width: 1439px) {
-    .quality-section {
-        padding: 64px 0;
-    }
 
     .quality-section-title {
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 1.2;
-        letter-spacing: -0.01em;
         width: 452px;
         margin: 0 auto 24px;
     }
@@ -178,10 +161,6 @@ img {
 
 /* Десктоп або комп'ютер */
 @media (min-width: 1440px) {
-
-    .quality-section {
-        padding: 64px 0;
-    }
 
     .quality-cards {
         max-width: 1312px;
@@ -235,13 +214,15 @@ img {
     }
 
     .quality-section-title {
-        font-weight: 400;
         font-size: 48px;
-        line-height: 1.16;
-        letter-spacing: -0.01em;
         width: 768px;
         text-align: center;
         margin: 0 auto 18px;
+    }
+
+    .quality-descr {
+        width: 768px;
+        text-align: center;
     }
 
     .quality-section-descr {

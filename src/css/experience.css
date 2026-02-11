@@ -96,8 +96,8 @@
 
   .coffe-list {
     flex-direction: column;
-    gap: 32px;
     height: 948px;
+    width: 100%;
   }
 
   .experience-img {

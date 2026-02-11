@@ -6,19 +6,13 @@
   align-items: center;
 }
 
-.title-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .experience-title {
   font-size: 36px;
   line-height: 1.2;
   font-weight: normal;
   text-align: center;
   max-width: 288px;
-  margin-bottom: 24px;
+  margin: 0 auto 24px;
 }
 
 .experience-text {
@@ -26,35 +20,22 @@
   line-height: 1.5;
   text-align: center;
   max-width: 288px;
+  margin: 0 auto 32px;
 }
 
-.img-container {
-  margin-top: 32px;
-  width: 100%;
-}
-.coffe-lists-box {
+.coffe-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 375px;
   margin: 0 auto;
 }
-.coffe-list {
-  display: contents;
-}
 .experience-img {
-  display: block;
-  width: 100%;
-  height: 100%;
   border-radius: 32px;
   overflow: hidden;
 }
 
 .experience-img img {
-  display: block;
-  width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .div1,
@@ -71,12 +52,6 @@
   height: 391px;
 }
 
-@media screen and (min-width: 375px) {
-  .experience-img {
-    max-width: 375px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .experience-title {
     width: 100%;
@@ -88,20 +63,14 @@
     max-width: 768px;
   }
 
-  .coffe-lists-box {
-    display: grid;
-    grid-template-columns: repeat(2, 336px);
-    gap: 32px;
-    justify-content: center;
-    align-items: start;
-  }
-
   .coffe-list {
-    display: contents;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
   }
 
   .experience-img {
-    width: 336px;
+    width: calc((100% - 32px) / 2);
   }
   .div1,
   .div2,
@@ -115,9 +84,7 @@
   }
 
   .div7 {
-    grid-column: 1 / -1;
     width: 704px;
-    max-width: 704px;
     height: 391px;
     justify-self: center;
   }
@@ -125,38 +92,28 @@
 @media screen and (min-width: 1440px) {
   .experience-title {
     font-size: 48px;
-  } 
-
-  .coffe-lists-box {
-    width: 1312px;
-    display: grid;
-    grid-template-columns: repeat(3, 416px);
-    gap: 32px;
-    margin: 0 auto;
-    align-items: start;
   }
 
   .coffe-list {
-    display: flex;
     flex-direction: column;
     gap: 32px;
+    height: 948px;
   }
 
-  .coffe-lists-box .experience-img {
-    width: 416px;
-    max-width: 416px;
+  .experience-img {
+    width: calc((100% - 64px) / 3);
   }
 
-  .coffe-lists-box .div1,
-  .coffe-lists-box .div2,
-  .coffe-lists-box .div5,
-  .coffe-lists-box .div6,
-  .coffe-lists-box .div7 {
+  .div1,
+  .div2,
+  .div5,
+  .div6,
+  .div7 {
     height: 416px;
   }
 
-  .coffe-lists-box .div3,
-  .coffe-lists-box .div4 {
+  .div3,
+  .div4 {
     height: 234px;
   }
 }

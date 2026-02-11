@@ -11,9 +11,13 @@
 
   max-width: 1440px;
 
-  background-image: url("../images/hero/hero-mob-1x.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), image-set(url("../images/hero/hero-mob-1x.jpg") 1x,
-      url("../images/hero/hero-mob-2x.jpg") 2x);
+  background-image: url('../images/hero/hero-mob-1x.jpg');
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    image-set(
+      url('../images/hero/hero-mob-1x.jpg') 1x,
+      url('../images/hero/hero-mob-2x.jpg') 2x
+    );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -62,7 +66,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin-top: 8px;
   gap: 8px;
   border-radius: 100px;
   padding: 10px 24px;
@@ -99,9 +102,13 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url("../images/hero/hero-tab-1x.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), image-set(url("../images/hero/hero-tab-1x.jpg") 1x,
-        url("../images/hero/hero-tab-2x.jpg") 2x);
+    background-image: url('../images/hero/hero-tab-1x.jpg');
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      image-set(
+        url('../images/hero/hero-tab-1x.jpg') 1x,
+        url('../images/hero/hero-tab-2x.jpg') 2x
+      );
     padding: 311px 0;
   }
 
@@ -118,9 +125,13 @@
 @media screen and (min-width: 1440px) {
   .hero {
     padding: 259px 0;
-    background-image: url("../images/hero/hero-desk-1x.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), image-set(url("../images/hero/hero-desk-1x.jpg") 1x,
-        url("../images/hero/hero-desk-2x.jpg") 2x);
+    background-image: url('../images/hero/hero-desk-1x.jpg');
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      image-set(
+        url('../images/hero/hero-desk-1x.jpg') 1x,
+        url('../images/hero/hero-desk-2x.jpg') 2x
+      );
   }
 
   .hero-title {

@@ -61,6 +61,8 @@
 }
 
 .footer-social-icon {
+  width: 32px;
+  height: 32px;
   fill: #0b0803;
 }
 
@@ -125,7 +127,6 @@
 
   .footer-logo-social {
     gap: 40px;
-
     flex-direction: row;
   }
 
@@ -135,23 +136,23 @@
   }
 
   .footer-social-link {
+    width: 32px;
+    height: 32px;
+  }
+
+  .icon-f {
     width: 24px;
     height: 24px;
   }
 
-  .icon-f {
-    width: 20px;
-    height: 20px;
-  }
-
   .icon-i {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
   }
 
   .icon-x {
-    width: 18px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
   }
 
   .footer-nav-list {
